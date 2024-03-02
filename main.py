@@ -60,7 +60,7 @@ def initialize_chat():
     chat = ConversationChain(
         memory=ConversationBufferWindowMemory(k=3, return_messages=True),
         prompt=prompt_template,
-        llm=ChatOpenAI(model_name="gpt-3.5-turbo", openai_api_key) # Insert your OpenAI API key
+        llm=ChatOpenAI(model_name="gpt-3.5-turbo", openai_api_key=openai_api_key) # Insert your OpenAI API key
     )
     return chat
 

@@ -1,5 +1,7 @@
 import pandas as pd
 import streamlit as st
+import os
+from dotenv import load_dotenv
 from streamlit_chat import message
 from langchain_openai import ChatOpenAI
 from langchain.chains import ConversationChain
